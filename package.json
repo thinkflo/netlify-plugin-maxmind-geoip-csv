@@ -1,6 +1,6 @@
 {
   "name": "netlify-plugin-maxmind-geoip-csv",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Netlify plugin that processes and compresses GeoIP databases for enhanced precision in Canadian geolocations, outputting optimized JSON files for Netlify geolocation functions.",
   "license": "MIT",
   "author": "Thinkflo",
