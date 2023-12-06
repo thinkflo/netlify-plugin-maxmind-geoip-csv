@@ -1,0 +1,14 @@
+name: netlify-plugin-maxmind-geoip-csv
+inputs:
+  - name: precision
+    required: false
+    description: Number of kilometer threshold
+  - name: filterPattern
+    required: false
+    description: An optional Regex pattern to filter zip or postal codes
+  - name: ipv4OutputFile
+    required: false
+    description: Specifies where the ipv4 entries should be saved
+  - name: ipv6OutputFile
+    required: false
+    description: Specifies where the ipv6 entries should be saved
