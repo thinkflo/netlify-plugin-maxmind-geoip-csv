@@ -37,7 +37,7 @@ const groups = {}
 export const onPreBuild = async ({inputs}) => {
   const { 
     precision = 10,
-    filterPattern = "^[ABCEGHJKLMNPRSTVXY][0-9][A-Z]$",
+    filterPattern = "",
     ipv4OutputFile = 'ipv4.json',
     ipv6OutputFile = 'ipv6.json'
   } = inputs
