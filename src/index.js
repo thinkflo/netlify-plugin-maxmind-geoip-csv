@@ -59,7 +59,7 @@ export const onPreBuild = async ({inputs}) => {
           zip.readAsText(entry).split("\n").map(currentRow => {
             const row = currentRow.split(",");
             
-            if (row[6] && row[6].match() && row[9] && JSON.parse(row[9]) <= precision) {
+            if (row[6] && row[6].match(pattern) && row[9] && JSON.parse(row[9]) <= precision) {
               if (!octets[Number(row[0].split(".").slice(0,1))]?.length) {
                 octets[Number(row[0].split(".").slice(0,1))] = []
               }
