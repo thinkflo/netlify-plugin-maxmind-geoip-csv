@@ -68,7 +68,6 @@ export const onPreBuild = async ({inputs}) => {
           });
           console.log("Completed Extracting MaxMind GeoIP CSV - IPv4");
           console.log("Writing IPv4 file");
-          console.log(`${ipv4OutputFile}`, octets.length);
           fs.writeFileSync(`${ipv4OutputFile}`, JSON.stringify(octets));
         break;
         case /GeoIP2-City-North-America-Blocks-IPv6[.]csv/.test(entry.entryName):
